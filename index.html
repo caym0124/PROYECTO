@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>JC INTRANET MANTENIMIENTO</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+</head>
+<body>
+<script type="app.js"></script>
+<div class="container">
+    <nav>
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="vision.html">Visión</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="mision.html">Misión</a>
+          </li>
+        </ul>
+      </nav>
+</div>
+  <header>
+    <h1>Reportar daños mecánicos</h1>
+  </header>
+  <main>
+    <form action="procesar.php" method="post">
+      <label for="tipo-averia">Tipo de avería:</label>
+      <select name="tipo-averia" id="tipo-averia">
+        <option value="motor">Motor</option>
+        <option value="transmisión">Transmisión</option>
+        <option value="chasis">Chasis</option>
+        <option value="frenos">Frenos</option>
+        <option value="dirección">Dirección</option>
+        <option value="neumáticos">Neumáticos</option>
+        <option value="otro">Otro</option>
+      </select>
+      <label for="descripcion">Descripción:</label>
+      <textarea name="descripcion" id="descripcion" rows="10" cols="50"></textarea>
+      <input type="submit" value="Enviar">
+    </form>
+  </main>
+  <footer>
+    <p>JC INTRANET MANTENIMIENTO, 2023</p>
+  </footer>
+</body>
+</html>
